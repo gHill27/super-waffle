@@ -2,6 +2,7 @@
 import pygame
 import random
 import time
+import Bartender_Classes
 
 """SCREENS"""
 START = 1
@@ -36,21 +37,3 @@ def display_start():
 while True: 
     if current_screen == START:
         display_start()
-
-
-
-
-
-
-class Bottle: 
-    def __init__(self, flavor, percentage, type, name):
-        self.flavor = flavor
-    def print_flavor(self):
-        print(self.flavor)
-
-
-class Pump:
-    def __init__(self,Port):
-        self.Port = Port
-    def start_pump(self, duration, ml):
-        pass
